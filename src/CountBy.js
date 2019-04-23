@@ -1,27 +1,28 @@
 import React from 'react';
 
-class NumberBounce extends React.Component {
+class CountBy extends React.Component {
     constructor(props) {
         super(props);
-            this.state = {
-                number: 0
-            }
+        this.state = {
+            number: 0,
+            countBy:15
+        }
     }
     componentDidMount() {
         let direction = 1;
         setInterval(() => {
             if (direction === 1) {
                 this._incrementNumber()
-            } if (this.state.number === 101){
+            } if (this.state.number >= 95){
                 direction = 0;
             }
             if (direction === 0) {
                 this._decrementNumber()
-            } if (this.state.number === -101) {
+            } if (this.state.number <= -85) {
                 direction = 1;
             }
            
-        }, 10000)
+        }, 1000)
         
     }
 
@@ -35,14 +36,14 @@ class NumberBounce extends React.Component {
 
     _incrementNumber = () => {
         this.setState({
-            number: this.state.number + 1
+            number: this.state.number + this.state.countBy
         });
     }
     _decrementNumber = () => {
         this.setState({
-            number: this.state.number - 1
+            number: this.state.number - this.state.countBy
         });
     }
 }
 
-export default NumberBounce;
+export default CountBy;

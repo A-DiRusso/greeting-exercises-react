@@ -4,6 +4,7 @@ import GreetLowercase from './GreetLowercase';
 import LeetGreet from './LeetGreet';
 import CaesarGreet from './CaesarGreet';
 import NumberBounce from './NumberBounce';
+import CountBy from './CountBy';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <GreetLowercase name="MAX"/>
         <LeetGreet name="leetspeak"/>
         <CaesarGreet  name="Brutus"/>
-        <NumberBounce number="0"/>
+        <NumberBounce />
+        <CountBy />
         <a
           className="App-link"
           href="https://reactjs.org"
