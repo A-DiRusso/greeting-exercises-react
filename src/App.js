@@ -5,6 +5,7 @@ import LeetGreet from './LeetGreet';
 import CaesarGreet from './CaesarGreet';
 import NumberBounce from './NumberBounce';
 import CountBy from './CountBy';
+import LimitBy from './LimitBy';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <CaesarGreet  name="Brutus"/>
         <NumberBounce />
         <CountBy />
+        <LimitBy />
         <a
           className="App-link"
           href="https://reactjs.org"
