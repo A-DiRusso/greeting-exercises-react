@@ -1,14 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import GreetLowercase from './GreetLowercase';
+import LeetGreet from './LeetGreet';
+import CaesarGreet from './CaesarGreet';
+import NumberBounce from './NumberBounce';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <GreetLowercase name="MAX"/>
-
+        <LeetGreet name="leetspeak"/>
+        <CaesarGreet  name="Brutus"/>
+        <NumberBounce number="0"/>
         <a
           className="App-link"
           href="https://reactjs.org"

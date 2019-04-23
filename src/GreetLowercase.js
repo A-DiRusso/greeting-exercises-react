@@ -3,7 +3,7 @@ import React from 'react';
 function GreetLowercase(props) {
     return (
         <h1>
-            Hello {props.name.toLowerCase()} !
+            Hello, {props.name.toLowerCase()}!
         </h1>
     )
 }
