@@ -6,6 +6,7 @@ import CaesarGreet from './CaesarGreet';
 import NumberBounce from './NumberBounce';
 import CountBy from './CountBy';
 import LimitBy from './LimitBy';
+import CounterButton from './CounterButton';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <NumberBounce />
         <CountBy />
         <LimitBy />
+        <CounterButton />
         <a
           className="App-link"
           href="https://reactjs.org"
